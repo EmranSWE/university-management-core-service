@@ -1,0 +1,84 @@
+Sun Sep 17 2023 13:18:37 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  }
+]
+Sun Sep 17 2023 13:42:54 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.course.create()` invocation:
+
+{
+  data: {
+    title: "Programming Language C",
+    Code: "SWE111",
+    credits: 3,
++   code: String
+  }
+}
+
+Argument `code` is missing.
+Sun Sep 17 2023 13:44:1 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.course.create()` invocation:
+
+{
+  data: {
+    title: "Programming Language C",
+    Code: "SWE111",
+    credits: 3,
++   code: String
+  }
+}
+
+Argument `code` is missing.
+Sun Sep 17 2023 13:46:50 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.course.create()` invocation:
+
+{
+  data: {
+    title: "Programming Language C",
+    code: "SWE111",
+    credits: 3,
+    preRequisiteCourses: [
+    ~~~~~~~~~~~~~~~~~~~
+      {
+        courseId: "6428c980-9a24-4293-9a17-77f24bc88288"
+      }
+    ],
+?   id?: String,
+?   createdAt?: DateTime,
+?   updatedAt?: DateTime,
+?   preRequisite?: CourseToPrerequisiteCreateNestedManyWithoutCourseInput,
+?   preRequisiteFor?: CourseToPrerequisiteCreateNestedManyWithoutPreRequisiteInput
+  }
+}
+
+Unknown argument `preRequisiteCourses`. Available options are listed in green.
+Sun Sep 17 2023 13:56:48 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.course.create()` invocation:
+
+{
+  data: {
+    title: "Programming Language C",
+    code: "SWE111",
+    credits: 3,
+    preRequisiteCourses: [
+    ~~~~~~~~~~~~~~~~~~~
+      {
+        courseId: "6428c980-9a24-4293-9a17-77f24bc88288"
+      }
+    ],
+?   id?: String,
+?   createdAt?: DateTime,
+?   updatedAt?: DateTime,
+?   preRequisite?: CourseToPrerequisiteCreateNestedManyWithoutCourseInput,
+?   preRequisiteFor?: CourseToPrerequisiteCreateNestedManyWithoutPreRequisiteInput
+  }
+}
+
+Unknown argument `preRequisiteCourses`. Available options are listed in green.

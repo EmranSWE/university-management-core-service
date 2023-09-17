@@ -1,30 +1,29 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-
-import { studentFilterableFields } from './student.constants';
-import { StudentService } from './student.service';
 import catchAsync from '../../../shared/catchAsync';
-import sendResponse from '../../../shared/sendResponse';
 import pick from '../../../shared/pick';
+import sendResponse from '../../../shared/sendResponse';
+import { roomFilterableFields } from './room.constants';
+import { RoomService } from './room.service';
 
 const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
-  const result = await StudentService.insertIntoDB(req.body);
+  const result = await RoomService.insertIntoDB(req.body);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Student created successfully',
+    message: 'Room created successfully',
     data: result,
   });
 });
 
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
-  const filters = pick(req.query, studentFilterableFields);
+  const filters = pick(req.query, roomFilterableFields);
   const options = pick(req.query, ['limit', 'page', 'sortBy', 'sortOrder']);
-  const result = await StudentService.getAllFromDB(filters, options);
+  const result = await RoomService.getAllFromDB(filters, options);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Students fetched successfully',
+    message: 'Rooms fetched successfully',
     meta: result.meta,
     data: result.data,
   });
@@ -32,42 +31,41 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
 
 const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const result = await StudentService.getByIdFromDB(id);
+  const result = await RoomService.getByIdFromDB(id);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Student fetched successfully',
+    message: 'Room fetched successfully',
     data: result,
   });
 });
 
-const updateIntoDB = catchAsync(async (req: Request, res: Response) => {
+const updateOneInDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const payload = req.body;
-  const result = await StudentService.updateIntoDB(id, payload);
+  const result = await RoomService.updateOneInDB(id, req.body);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Student updated successfully',
+    message: 'Room updated successfully',
     data: result,
   });
 });
 
-const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
+const deleteByIdFromDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const result = await StudentService.deleteFromDB(id);
+  const result = await RoomService.deleteByIdFromDB(id);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Student deleted successfully',
+    message: 'Room deleted successfully',
     data: result,
   });
 });
 
-export const StudentController = {
+export const RoomController = {
   insertIntoDB,
   getAllFromDB,
   getByIdFromDB,
-  updateIntoDB,
-  deleteFromDB,
+  updateOneInDB,
+  deleteByIdFromDB,
 };

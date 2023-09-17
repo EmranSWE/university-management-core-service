@@ -1,0 +1,6 @@
+Sun Sep 17 2023 18:36:10 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
+Sun Sep 17 2023 18:36:43 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.courseToPrerequisite.create()` invocation:
+
+
+Foreign key constraint failed on the field: `CourseToPrerequisite_preRequisiteId_fkey (index)`
