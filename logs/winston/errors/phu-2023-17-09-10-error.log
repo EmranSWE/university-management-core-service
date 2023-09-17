@@ -1,0 +1,52 @@
+Sun Sep 17 2023 10:18:31 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Year is require"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "code"
+    ],
+    "message": "Code is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "startMonth"
+    ],
+    "message": "start Month is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "endMonth"
+    ],
+    "message": "End Month is required"
+  }
+]

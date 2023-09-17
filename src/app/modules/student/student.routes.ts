@@ -1,7 +1,8 @@
 import express from 'express';
-import auth from '../../app/middlewares/auth';
-import validateRequest from '../../app/middlewares/validateRequest';
-import { ENUM_USER_ROLE } from '../../enums/user';
+
+import { ENUM_USER_ROLE } from '../../../enums/user';
+import auth from '../../middlewares/auth';
+import validateRequest from '../../middlewares/validateRequest';
 import { StudentController } from './student.controller';
 import { StudentValidation } from './student.validations';
 

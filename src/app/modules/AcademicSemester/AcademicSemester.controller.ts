@@ -1,9 +1,10 @@
 import { AcademicSemester } from '@prisma/client';
 import { NextFunction, Request, Response } from 'express';
 import httpStatus from 'http-status';
-import catchAsync from '../../shared/catchAsync';
-import pick from '../../shared/pick';
-import sendResponse from '../../shared/sendResponse';
+
+import catchAsync from '../../../shared/catchAsync';
+import pick from '../../../shared/pick';
+import sendResponse from '../../../shared/sendResponse';
 import { AcademicSemesterService } from './AcademicSemester.service';
 
 const insertIntoDB = catchAsync(
@@ -36,7 +37,18 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getDataById = catchAsync(async (req: Request, res: Response) => {
+  const result = await AcademicSemesterService.getDataFromId(req.params.id);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic Semester Data fetched',
+
+    data: result,
+  });
+});
 export const AcademicSemesterController = {
   insertIntoDB,
   getAllFromDB,
+  getDataById,
 };

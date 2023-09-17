@@ -1,8 +1,9 @@
 import { AcademicFaculty, Prisma } from '@prisma/client';
-import { paginationHelpers } from '../../helpers/paginationHelper';
-import { IGenericResponse } from '../../interfaces/common';
-import { IPaginationOptions } from '../../interfaces/pagination';
-import prisma from '../../shared/prisma';
+
+import { paginationHelpers } from '../../../helpers/paginationHelper';
+import { IGenericResponse } from '../../../interfaces/common';
+import { IPaginationOptions } from '../../../interfaces/pagination';
+import prisma from '../../../shared/prisma';
 import { academicFacultySearchableFields } from './academicFaculty.constants';
 import { IAcademicFacultyFilterRequest } from './academicFaculty.interface';
 

@@ -1,0 +1,14 @@
+Sun Sep 17 2023 11:48:54 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "academicFacultyId"
+    ],
+    "message": "Academic faculty id is required"
+  }
+]
+Sun Sep 17 2023 11:52:59 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
+Sun Sep 17 2023 11:53:3 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized

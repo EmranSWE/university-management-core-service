@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-import catchAsync from '../../shared/catchAsync';
-import pick from '../../shared/pick';
-import sendResponse from '../../shared/sendResponse';
 
+import catchAsync from '../../../shared/catchAsync';
+import pick from '../../../shared/pick';
+import sendResponse from '../../../shared/sendResponse';
 import { facultyFilterableFields } from './faculty.constants';
 import { FacultyService } from './faculty.service';
 
