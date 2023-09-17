@@ -1,0 +1,11 @@
+Sun Sep 17 2023 23:0:1 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.courseFaculty.createMany()` invocation:
+
+
+Unique constraint failed on the fields: (`courseId`,`facultyId`)
+Sun Sep 17 2023 23:0:19 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.courseFaculty.createMany()` invocation:
+
+
+Unique constraint failed on the fields: (`courseId`,`facultyId`)
+Sun Sep 17 2023 23:0:49 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
