@@ -64,6 +64,11 @@
             "date": 1695009636867,
             "name": "G:\\Next Level Web development\\UPH core\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2023-18-09-10-error.log",
             "hash": "e07d4d642a6370010649d2941154ed0b6eeb324b1b09823455391b3b37eef1fa"
+        },
+        {
+            "date": 1695013277098,
+            "name": "G:\\Next Level Web development\\UPH core\\university-management-core-service-starter\\logs\\winston\\errors\\phu-2023-18-09-11-error.log",
+            "hash": "c55ad020f321f1a091181a7abab8395025b1b1b2f0b7e8dc9c47a1bbb5b39172"
         }
     ],
     "hashType": "sha256"

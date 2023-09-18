@@ -1,0 +1,75 @@
+Mon Sep 18 2023 11:40:26 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "startDate"
+    ],
+    "message": "Start date is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "endDate"
+    ],
+    "message": "End date is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "academicSemesterId"
+    ],
+    "message": "Academic semester id is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "body",
+      "minCredit"
+    ],
+    "message": "Min credit is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "undefined",
+    "path": [
+      "body",
+      "maxCredit"
+    ],
+    "message": "Max credit is required"
+  }
+]
+Mon Sep 18 2023 11:41:8 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
+Mon Sep 18 2023 11:41:26 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.offeredCourse.create()` invocation:
+
+
+Foreign key constraint failed on the field: `offered_courses_semesterRegistrationId_fkey (index)`
+Mon Sep 18 2023 11:42:13 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "semesterRegistrationId"
+    ],
+    "message": "Semester Reg. is required"
+  }
+]
+Mon Sep 18 2023 11:42:20 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.offeredCourse.create()` invocation:
+
+
+Foreign key constraint failed on the field: `offered_courses_semesterRegistrationId_fkey (index)`
