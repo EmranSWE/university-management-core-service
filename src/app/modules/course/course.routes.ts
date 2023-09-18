@@ -38,7 +38,7 @@ router.post(
 
 router.delete(
   '/:id/remove-faculties',
-  // validateRequest(CourseValidation.assignOrRemoveFaculties),
+  validateRequest(CourseValidation.assignOrRemoveFaculties),
   // auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
   CourseController.removeFaculties
 );

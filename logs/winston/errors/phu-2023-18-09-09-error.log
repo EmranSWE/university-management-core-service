@@ -1,0 +1,34 @@
+Mon Sep 18 2023 9:32:37 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.courseFaculty.createMany()` invocation:
+
+
+Unique constraint failed on the fields: (`courseId`,`facultyId`)
+Mon Sep 18 2023 9:34:24 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of undefined (reading 'map')
+Mon Sep 18 2023 9:36:3 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of undefined (reading 'map')
+Mon Sep 18 2023 9:54:32 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.semesterRegistration.create()` invocation:
+
+{
+  data: {
+    facultyId: "F00001",
+    firstName: "Robert",
+    middleName: "M.",
+    lastName: "Smith",
+    profileImage: "https://example.com/images/faculty/F987654.jpg",
+    email: "robert.smith@example.edu",
+    contactNo: "+0987654321",
+    gender: "Male",
+    bloodGroup: "A-",
+    designation: "Professor",
+    academicDepartmentId: "fc5a15dd-1fc4-47c9-8acc-6909f1ed22a4",
+    academicFacultyId: "c8892907-9c35-4650-8b2f-2ff38571a3a5",
++   startDate: DateTime
+  }
+}
+
+Argument `startDate` is missing.
+Mon Sep 18 2023 9:56:28 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.semesterRegistration.create()` invocation:
+
+
+Foreign key constraint failed on the field: `semester_registrations_academicSemesterId_fkey (index)`
