@@ -1,0 +1,65 @@
+Tue Sep 19 2023 10:25:45 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "expected": "'SATURDAY' | 'SUNDAY' | 'MONDAY' | 'TUESDAY' | 'WEDNESDAY' | 'THURSDAY' | 'FRIDAY'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "dayOfWeek"
+    ],
+    "message": "Day of week is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "startTime"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "endTime"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "roomId"
+    ],
+    "message": "Room id is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "facultyId"
+    ],
+    "message": "Faculty id is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "offeredCourseSectionId"
+    ],
+    "message": "Section id is required"
+  }
+]
+Tue Sep 19 2023 10:31:9 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ You are not authorized
+Tue Sep 19 2023 10:31:40 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ (0 , utils_1.hasTimeConflict) is not a function
+Tue Sep 19 2023 10:31:49 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ (0 , utils_1.hasTimeConflict) is not a function
